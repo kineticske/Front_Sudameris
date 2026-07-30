@@ -18,4 +18,4 @@ ENV PORT=3000
 EXPOSE 3000
 
 # 5. Iniciar la aplicación apuntando a la carpeta compilada
-CMD ["serve", "-s", "build", "-l", "3000"]
+CMD ["serve", "-s", "build", "-l", "tcp://0.0.0.0:3000"]

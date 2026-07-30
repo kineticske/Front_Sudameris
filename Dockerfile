@@ -1,5 +1,6 @@
 FROM node:16-slim
-
-ADD . /banco_react
-
 WORKDIR /banco_react
+COPY . /banco_react
+RUN npm install
+EXPOSE 3000
+CMD ["npm", "start"]
